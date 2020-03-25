@@ -12,9 +12,9 @@
 
         <span class="post reading-time"> ~ <span></span> read.</span>
       </div>
-      <a title="Tweet '{{title}}'" href="https://twitter.com/intent/tweet?text={{encode title}}&amp;hashtags={{tags separator="," autolink="false"}}&amp;url={{url absolute="true"}}">
+      <a title="Baidu '{{title}}'" href="https://www.baidu.com/s?wd={{encode title}}&amp;hashtags={{tags separator="," autolink="false"}}&amp;url={{url absolute="true"}}">
         {{#if feature_image}}<img id="post-image" src="{{img_url feature_image}}" alt="{{title}}">{{/if}}
-        <h1 class="icon-reverse icon-social-twitter-post" id="post-title">{{title}}</h1>
+        <h1 class="icon-reverse icon-search-post" id="post-title">{{title}}</h1>
       </a>
     </header>
 
@@ -31,8 +31,6 @@
         <a rel="next" id="next-btn" class="btn small square" href="{{url}}">{{title}} →</a>
       {{/next_post}}
     </div>
-
-    {{> comments}}
 
   </article>
 
